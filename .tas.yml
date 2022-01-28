@@ -1,0 +1,16 @@
+framework: jest
+tier: large
+preRun:
+  command:
+    - yarn install
+postMerge:
+  pattern:
+    - './app/test/unit/*.ts'
+preMerge:
+  pattern:
+    - './app/test/unit/*.ts'
+postRun:
+  command:
+    - yarn --version
+configFile: './app/jest.unit.config.js'
+version: 1.0
