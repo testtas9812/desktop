@@ -13,4 +13,3 @@ postRun:
     - yarn --version
 configFile: './app/jest.unit.config.js'
 version: 1.0
-
